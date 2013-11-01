@@ -5,7 +5,10 @@
 void testApp::setup(){
 	current= new FstState((BaseApp*)this);
 	states.push_back(current);
+	states.push_back(new SndState((BaseApp*)this));
 }
+
+
 
 //--------------------------------------------------------------
 void testApp::update(){
@@ -14,7 +17,6 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	ofBackground(100);
 	current->draw();
 
 }
@@ -41,7 +43,7 @@ void testApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
-
+	current->mousePressed(x,y,button);
 }
 
 //--------------------------------------------------------------

@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofGraphics.h"
 #include "FstState.h"
+#include "SndState.h"
 
 class State;
 class testApp : public ofBaseApp{

@@ -1,13 +1,12 @@
 #pragma once
 #include "State.h"
 #include "BaseApp.h"
-class FstState : public State
+class SndState : public State
 {
 public:
-	FstState(BaseApp* app);
-	~FstState(void);
-
-	ofImage goToSnd,goToTrd,goToFrth;
+	SndState(BaseApp* app);
+	~SndState(void);
+	
 	void keyReleased(int key);
 	void mouseMoved(int x, int y );
 	void mouseReleased(int x, int y, int button);
@@ -17,6 +16,5 @@ public:
 	void update();
 	void draw();
 private:
-	int c;
-
+	ofImage goToFst;
 };

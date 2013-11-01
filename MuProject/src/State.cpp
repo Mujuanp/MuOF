@@ -3,6 +3,7 @@
 State::State(BaseApp* app)
 {
 	reference=app;
+	fondo.loadImage("images/fondo.png");
 }
 
 
@@ -45,5 +46,5 @@ void State::update(){
 
 }
 void State::draw(){
-
+	fondo.draw(0,0,ofGetWindowSize().x,ofGetWindowSize().y);
 }

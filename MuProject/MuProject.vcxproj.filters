@@ -16,6 +16,9 @@
     <ClCompile Include="src\BaseApp.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\SndState.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -33,6 +36,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\BaseApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SndState.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

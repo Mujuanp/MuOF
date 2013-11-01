@@ -93,12 +93,14 @@
     <ClCompile Include="src\BaseApp.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\FstState.cpp" />
+    <ClCompile Include="src\SndState.cpp" />
     <ClCompile Include="src\State.cpp" />
     <ClCompile Include="src\testApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BaseApp.h" />
     <ClInclude Include="src\FstState.h" />
+    <ClInclude Include="src\SndState.h" />
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\testApp.h" />
   </ItemGroup>

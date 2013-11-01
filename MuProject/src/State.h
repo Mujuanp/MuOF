@@ -16,5 +16,7 @@ public:
 	void exit();
 	virtual void update();
 	virtual void draw();
+protected:
 	BaseApp* reference;
+	ofImage fondo;
 };
