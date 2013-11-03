@@ -19,6 +19,15 @@
     <ClCompile Include="src\SndState.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\TrdState.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Particle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FthState.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -39,6 +48,15 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\SndState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TrdState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FthState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Particle.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

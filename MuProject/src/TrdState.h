@@ -1,23 +1,24 @@
 #pragma once
 #include "State.h"
 #include "BaseApp.h"
-class FstState : public State
-{
-public:
-	FstState(BaseApp* app);
-	~FstState(void);
 
-	ofImage goToSnd,goToTrd,goToFth;
+class TrdState :public State{
+public:
+	TrdState(BaseApp* ap);
+	~TrdState(void);
 	void keyReleased(int key);
 	void mouseMoved(int x, int y );
 	void mouseReleased(int x, int y, int button);
 	void mousePressed(int x, int y, int button);
 	void enter();
 	void exit();
-
 	void update();
 	void draw();
 private:
-	int c;
-
+		ofImage goToFst;
+	ofVideoGrabber 		vidGrabber;
+	int 				camWidth;
+	int 				camHeight;
+	
+	int rotacion;
 };

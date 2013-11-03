@@ -56,5 +56,8 @@ State* BaseApp::getStateById(int id){
 	return states[id];
 }
 void BaseApp::setCurrentState(State* state){
+	current->exit();
+	state->enter();
 	current=state;
 }
+

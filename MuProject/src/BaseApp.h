@@ -21,10 +21,11 @@ public:
 	virtual void dragEvent(ofDragInfo dragInfo);
 	virtual void gotMessage(ofMessage msg);
 
-	vector<State*>* getStates();
-	State* getCurrentState();
-	State* getStateById(int id);
-	void setCurrentState(State* state);
+	 vector<State*>* getStates();
+	 State* getCurrentState();
+	 State* getStateById(int id);
+	 void setCurrentState(State* state);
+	
 private:
 	vector<State*> states;
 	State* current;

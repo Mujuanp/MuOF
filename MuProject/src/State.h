@@ -9,11 +9,12 @@ public:
 
 	void keyPressed(int key);
 	void keyReleased(int key);
-	void mouseMoved(int x, int y );
-	void mouseReleased(int x, int y, int button);
+	virtual void mouseMoved(int x, int y );
+	virtual void mouseReleased(int x, int y, int button);
 	virtual void mousePressed(int x, int y, int button);
-	void enter();
-	void exit();
+	virtual void enter();
+	virtual void exit();
+	
 	virtual void update();
 	virtual void draw();
 protected:

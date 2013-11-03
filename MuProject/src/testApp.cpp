@@ -6,6 +6,9 @@ void testApp::setup(){
 	current= new FstState((BaseApp*)this);
 	states.push_back(current);
 	states.push_back(new SndState((BaseApp*)this));
+	states.push_back(new TrdState((BaseApp*)this));
+	states.push_back(new FthState((BaseApp*)this));
+	
 }
 
 
@@ -33,7 +36,7 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
+	current->mouseMoved(x,y);
 }
 
 //--------------------------------------------------------------
@@ -48,7 +51,7 @@ void testApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
-
+	current->mouseReleased(x,y,button);
 }
 
 //--------------------------------------------------------------
@@ -66,8 +69,8 @@ void testApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
-vector<State*> testApp::getStates(){
-	return states;
+vector<State*>* testApp::getStates(){
+	return &states;
 }
 State* testApp::getCurrentState(){
 	return current;
@@ -76,5 +79,7 @@ State* testApp::getStateById(int id){
 	return states[id];
 }
 void testApp::setCurrentState(State* state){
+	current->exit();
+	state->enter();
 	current=state;
 }

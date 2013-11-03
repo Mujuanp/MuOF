@@ -37,11 +37,12 @@ void State::mouseReleased(int x, int y, int button){
 }
 
 void State::enter(){
-
+	cout<<" s";
 }
 void State::exit(){
 
 }
+
 void State::update(){
 
 }

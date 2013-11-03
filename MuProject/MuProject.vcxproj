@@ -91,18 +91,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\BaseApp.cpp" />
+    <ClCompile Include="src\FthState.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\FstState.cpp" />
+    <ClCompile Include="src\Particle.cpp" />
     <ClCompile Include="src\SndState.cpp" />
     <ClCompile Include="src\State.cpp" />
     <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="src\TrdState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BaseApp.h" />
     <ClInclude Include="src\FstState.h" />
+    <ClInclude Include="src\FthState.h" />
+    <ClInclude Include="src\Particle.h" />
     <ClInclude Include="src\SndState.h" />
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="src\TrdState.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
