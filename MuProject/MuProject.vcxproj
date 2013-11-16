@@ -58,7 +58,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -75,7 +75,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -91,6 +91,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\BaseApp.cpp" />
+    <ClCompile Include="src\Cylinder.cpp" />
+    <ClCompile Include="src\FithState.cpp" />
     <ClCompile Include="src\FthState.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\FstState.cpp" />
@@ -102,8 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BaseApp.h" />
+    <ClInclude Include="src\Cylinder.h" />
+    <ClInclude Include="src\FithState.h" />
     <ClInclude Include="src\FstState.h" />
     <ClInclude Include="src\FthState.h" />
+    <ClInclude Include="src\Shape.h" />
     <ClInclude Include="src\Particle.h" />
     <ClInclude Include="src\SndState.h" />
     <ClInclude Include="src\State.h" />

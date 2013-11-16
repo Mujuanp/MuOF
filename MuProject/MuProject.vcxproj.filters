@@ -28,6 +28,12 @@
     <ClCompile Include="src\FthState.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Cylinder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FithState.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -57,6 +63,15 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\Particle.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shape.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cylinder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FithState.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

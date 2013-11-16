@@ -6,7 +6,7 @@
 #include "SndState.h"
 #include "TrdState.h"
 #include "FthState.h"
-
+#include "FithState.h"
 class State;
 class testApp : public ofBaseApp{
 

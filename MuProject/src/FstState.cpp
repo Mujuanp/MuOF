@@ -4,6 +4,7 @@ FstState::FstState(BaseApp* app) : State(app){
 	goToSnd.loadImage("images/snd.jpg");
 	goToTrd.loadImage("images/trd.jpg");
 	goToFth.loadImage("images/fth.jpg");
+	gotoFith.loadImage("images/fith.jpg");
 	c=0;
 }
 
@@ -18,6 +19,7 @@ void FstState::draw(){
 	goToSnd.draw(15,15);
 	goToTrd.draw(360,15);
 	goToFth.draw(720,15);
+	gotoFith.draw(15,400);
 }
 void FstState::enter(){
 
@@ -38,6 +40,8 @@ void FstState::mousePressed(int x, int y, int button){
 		reference->setCurrentState(reference->getStateById(2));
 	if(x>=720 && x<=goToFth.getWidth()+720 && y>=15 && y<=goToFth.getHeight()+15)
 		reference->setCurrentState(reference->getStateById(3));
+	if(x>=15 && x<=gotoFith.getWidth()+15 && y>=400 && y<=gotoFith.getHeight()+400)
+		reference->setCurrentState(reference->getStateById(4));
 	
 
 }

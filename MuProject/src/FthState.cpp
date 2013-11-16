@@ -8,8 +8,6 @@ FthState::FthState(BaseApp* app):State(app){
 void FthState::enter(){
 	for (int ch = 0 ; ch< max;ch++)
 		particles.push_back(new Particle());
-	
-
 }
 void FthState::exit(){
 

@@ -8,7 +8,7 @@ void testApp::setup(){
 	states.push_back(new SndState((BaseApp*)this));
 	states.push_back(new TrdState((BaseApp*)this));
 	states.push_back(new FthState((BaseApp*)this));
-	
+	states.push_back(new FithState((BaseApp*)this));
 }
 
 
