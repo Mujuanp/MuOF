@@ -19,10 +19,11 @@ void FthState::update(){
 }
 void FthState::draw(){
 	State::draw();
-	goToFst.draw(0,0);
+
 //	ofSetColor(ofRandom(0,255),ofRandom(0,255),ofRandom(0,255));
 	for (int ch = 0 ; ch< max;ch++)
 		particles[ch]->draw();
+		goToFst.draw(0,0);
 	
 }
 

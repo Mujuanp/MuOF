@@ -36,7 +36,7 @@ void TrdState::update(){
 
 }
 void TrdState::mouseMoved(int x, int y){
-		cout<<"x "<<x<<" y "<<y<<"\n";
+//		cout<<"x "<<x<<" y "<<y<<"\n";
 		rotacion=0.1*(x-ofGetWindowWidth()/2);
 	//	ofRotateY(x);
 
