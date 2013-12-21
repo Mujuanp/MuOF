@@ -1,31 +1,31 @@
-#include "Cylinder.h"
-Cylinder::Cylinder(double r,double h, int segmentosX, int segmentosY){
-	H = h;
-	R = r;
+#include "Toro.h"
+Toro::Toro(double r,double R, int segmentosX, int segmentosY){
+	this->r = r;
+	this->R = R;
 	this->segmentosX=segmentosX;
 	this->segmentosY=segmentosY;
-	center = ofVec3f(ofGetWidth()/2,ofGetHeight()/2-100);
+//	center = ofVec3f(ofGetWidth()/2,ofGetHeight()/2-100);
 	rotateX=1;
 	rotateY=1;
 	rotateZ=1;
 }
-Cylinder::Cylinder(){
+Toro::Toro(){
 
 }
-ofVec3f Cylinder::phi(double x, double y){
-	ofVec3f result= ofVec3f(R*cos(x*2*PI),y *H,R*sin(x*2*PI));
+ofVec3f Toro::phi(double x, double y){
+	ofVec3f result= ofVec3f((R+r*cos(x*2*PI))*cos(y*2*PI),(R+r*cos(x*2*PI))*sin(y*2*PI),r*sin(x*2*PI));
 	return result;
 }
 
-ofVec3f Cylinder::phiPX(double x, double y){
-	ofVec3f result= ofVec3f(-2*R*PI*sin(2*PI*x),0,2*PI*R*cos(2*PI*x));
+ofVec3f Toro::phiPX(double x, double y){
+	ofVec3f result= ofVec3f(-sin(2*PI*x)*cos(2*PI*y),-sin(2*PI*x)*sin(2*PI*y),r*cos(2*PI*x));
 	return result;
 }
-ofVec3f Cylinder::phiPY(double x, double y){
-	ofVec3f result= ofVec3f(0,H,0);
+ofVec3f Toro::phiPY(double x, double y){
+	ofVec3f result= ofVec3f(-(R+r*cos(x*2*PI))*sin(y*2*PI),(R+r*cos(x*2*PI))*cos(y*2*PI),0);
 	return result;
 }
-void Cylinder::draw(){
+void Toro::draw(){
 	ofTranslate(ofGetWidth()/2,ofGetHeight()/2-100);
 	ofRotateX(rotateX);
 	ofRotateY(rotateY);
@@ -46,7 +46,7 @@ void Cylinder::draw(){
 	for (int i = 0 ; i < segmentosX ; i++){
 		float fi = i/(float)segmentosX;
 		float fi1= (i+1)/(float)segmentosX;
-		for(int j = 0; j < segmentosY-1; j++){
+		for(int j = 0; j < segmentosY; j++){
 
 			float fj = j/(float)segmentosY;
 			float fj1 = (j+1)/(float)segmentosY;

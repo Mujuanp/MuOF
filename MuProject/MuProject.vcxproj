@@ -98,8 +98,10 @@
     <ClCompile Include="src\FstState.cpp" />
     <ClCompile Include="src\Particle.cpp" />
     <ClCompile Include="src\SndState.cpp" />
+    <ClCompile Include="src\Sphere.cpp" />
     <ClCompile Include="src\State.cpp" />
     <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="src\Toro.cpp" />
     <ClCompile Include="src\TrdState.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -111,8 +113,10 @@
     <ClInclude Include="src\Shape.h" />
     <ClInclude Include="src\Particle.h" />
     <ClInclude Include="src\SndState.h" />
+    <ClInclude Include="src\Sphere.h" />
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="src\Toro.h" />
     <ClInclude Include="src\TrdState.h" />
   </ItemGroup>
   <ItemGroup>

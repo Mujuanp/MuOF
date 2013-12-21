@@ -13,7 +13,8 @@ void FithState::enter(){
 	//			puntos.push_back( ofVec2f(w,h));
 	//		}
 	//	}
-	cylinder= Cylinder(ofRandom(10,400),ofRandom(10,400),30,30);
+	sphere = Sphere(ofRandom(10,300),30,30);
+	//	toro= Toro(ofRandom(10,100),ofRandom(120,300),30,30);
 }
 void FithState::exit(){
 
@@ -25,8 +26,9 @@ void FithState::update(){
 void FithState::draw(){
 	State::draw();
 	goToFst.draw(0,0);
-	cylinder.draw();
-
+	//cylinder.draw();
+//	toro.draw();
+	sphere.draw();
 }
 
 void FithState::mouseMoved(int x, int y){

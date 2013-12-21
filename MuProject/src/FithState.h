@@ -2,6 +2,8 @@
 #include "State.h"
 #include "BaseApp.h"
 #include "Cylinder.h"
+#include "Toro.h"
+#include "Sphere.h"
 class FithState :public State{
 public:
 	FithState(BaseApp* ap);
@@ -17,6 +19,8 @@ public:
 private:
 	ofImage goToFst;
 	Cylinder cylinder;
+	Toro toro;
+	Sphere sphere;
 
 
 };

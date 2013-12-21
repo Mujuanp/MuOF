@@ -34,6 +34,12 @@
     <ClCompile Include="src\FithState.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Toro.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sphere.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -72,6 +78,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\FithState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Toro.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sphere.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
