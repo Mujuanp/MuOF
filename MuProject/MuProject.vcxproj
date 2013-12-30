@@ -91,33 +91,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\BaseApp.cpp" />
-    <ClCompile Include="src\Cylinder.cpp" />
-    <ClCompile Include="src\FithState.cpp" />
-    <ClCompile Include="src\FthState.cpp" />
+    <ClCompile Include="src\geometry\Cylinder.cpp" />
+    <ClCompile Include="src\states\GeometryState.cpp" />
+    <ClCompile Include="src\states\CamShaderState.cpp" />
+    <ClCompile Include="src\states\ParticleState.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\FstState.cpp" />
-    <ClCompile Include="src\Particle.cpp" />
-    <ClCompile Include="src\SndState.cpp" />
-    <ClCompile Include="src\Sphere.cpp" />
-    <ClCompile Include="src\State.cpp" />
+    <ClCompile Include="src\states\MainState.cpp" />
+    <ClCompile Include="src\physics\Particle.cpp" />
+    <ClCompile Include="src\states\MoveCamState.cpp" />
+    <ClCompile Include="src\geometry\Sphere.cpp" />
+    <ClCompile Include="src\states\State.cpp" />
     <ClCompile Include="src\testApp.cpp" />
-    <ClCompile Include="src\Toro.cpp" />
-    <ClCompile Include="src\TrdState.cpp" />
+    <ClCompile Include="src\geometry\Toro.cpp" />
+    <ClCompile Include="src\states\RotateCamState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BaseApp.h" />
-    <ClInclude Include="src\Cylinder.h" />
-    <ClInclude Include="src\FithState.h" />
-    <ClInclude Include="src\FstState.h" />
-    <ClInclude Include="src\FthState.h" />
-    <ClInclude Include="src\Shape.h" />
-    <ClInclude Include="src\Particle.h" />
-    <ClInclude Include="src\SndState.h" />
-    <ClInclude Include="src\Sphere.h" />
-    <ClInclude Include="src\State.h" />
+    <ClInclude Include="src\geometry\Cylinder.h" />
+    <ClInclude Include="src\states\GeometryState.h" />
+    <ClInclude Include="src\states\MainState.h" />
+    <ClInclude Include="src\states\ParticleState.h" />
+    <ClInclude Include="src\geometry\Shape.h" />
+    <ClInclude Include="src\physics\Particle.h" />
+    <ClInclude Include="src\states\MoveCamState.h" />
+    <ClInclude Include="src\geometry\Sphere.h" />
+    <ClInclude Include="src\states\CamShaderState.h" />
+    <ClInclude Include="src\states\State.h" />
     <ClInclude Include="src\testApp.h" />
-    <ClInclude Include="src\Toro.h" />
-    <ClInclude Include="src\TrdState.h" />
+    <ClInclude Include="src\geometry\Toro.h" />
+    <ClInclude Include="src\states\RotateCamState.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

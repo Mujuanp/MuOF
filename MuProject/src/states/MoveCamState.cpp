@@ -1,5 +1,5 @@
-#include "SndState.h"
-SndState::SndState(BaseApp* app) : State(app){
+#include "MoveCamState.h"
+MoveCamState::MoveCamState(BaseApp* app) : State(app){
 	goToFst.loadImage("images/atras.png");
 	camWidth 		= 320;	// try to grab at this size. 
 	camHeight 		= 240;
@@ -17,11 +17,11 @@ SndState::SndState(BaseApp* app) : State(app){
 	ofSetVerticalSync(true);
 
 }
-void SndState::exit(){
+void MoveCamState::exit(){
 	
 	vidGrabber.close();
 }
-void SndState::enter(){
+void MoveCamState::enter(){
 
 	vidGrabber.setDeviceID(0);
 	vidGrabber.setDesiredFrameRate(60);
@@ -30,10 +30,10 @@ void SndState::enter(){
 }
 
 
-SndState::~SndState(void)
+MoveCamState::~MoveCamState(void)
 {
 }
-void SndState::draw(){
+void MoveCamState::draw(){
 	State::draw();
 	goToFst.draw(0,0);
 
@@ -70,7 +70,7 @@ void SndState::draw(){
 	
 }
 
-void SndState::update(){
+void MoveCamState::update(){
 
 	vidGrabber.update();
 	
@@ -116,21 +116,21 @@ void SndState::update(){
 		posCam4+=velCam4;
 }
 
-void SndState::mousePressed(int x, int y, int button){
+void MoveCamState::mousePressed(int x, int y, int button){
 	if(x>=0 && x<=goToFst.getWidth() && y>=0 && y<=goToFst.getHeight())
 		reference->setCurrentState(reference->getStateById(0));
 	
 }
-void SndState::mouseReleased(int x, int y, int button){
+void MoveCamState::mouseReleased(int x, int y, int button){
 
 }
 
-void SndState::mouseMoved(int x, int y ){
+void MoveCamState::mouseMoved(int x, int y ){
 
 }
 
 
-bool SndState::pasoBordeSup(ofVec2f pos){
+bool MoveCamState::pasoBordeSup(ofVec2f pos){
 	bool result;
 	if(pos.y<=0)
 		result=true;
@@ -138,7 +138,7 @@ bool SndState::pasoBordeSup(ofVec2f pos){
 		result=false;
 	return result;
 }
-bool SndState::pasoBordeInf(ofVec2f pos){
+bool MoveCamState::pasoBordeInf(ofVec2f pos){
 	bool result;
 	if(pos.y>=ofGetWindowSize().y)
 		result=true;
@@ -147,7 +147,7 @@ bool SndState::pasoBordeInf(ofVec2f pos){
 	return result;
 }
 
-bool SndState::pasoBordeIzq(ofVec2f pos){
+bool MoveCamState::pasoBordeIzq(ofVec2f pos){
 	bool result;
 	if(pos.x<=0)
 		result=true;
@@ -155,7 +155,7 @@ bool SndState::pasoBordeIzq(ofVec2f pos){
 		result=false;
 	return result;
 }
-bool SndState::pasoBordeDer(ofVec2f pos){
+bool MoveCamState::pasoBordeDer(ofVec2f pos){
 	
 	bool result;
 	if(pos.x>=ofGetWindowSize().x)
@@ -164,7 +164,7 @@ bool SndState::pasoBordeDer(ofVec2f pos){
 		result=false;
 	return result;
 }
-//void SndState::setDireccion(ofVec2f* pos,ofVec2f* vel){
+//void MoveCamState::setDireccion(ofVec2f* pos,ofVec2f* vel){
 //	if(pasoBordeSup(pos))
 //		vel= new ofVec2f(ofRandom(-1,1),1);
 //	if(pasoBordeInf(pos))

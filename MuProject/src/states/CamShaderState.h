@@ -1,13 +1,13 @@
 #pragma once
 #include "State.h"
-#include "BaseApp.h"
-#include "Cylinder.h"
-#include "Toro.h"
-#include "Sphere.h"
-class FithState :public State{
+#include "../BaseApp.h"
+class CamShaderState : public State
+{
 public:
-	FithState(BaseApp* ap);
-	~FithState(void);
+	CamShaderState(BaseApp* app);
+	~CamShaderState(void);
+
+
 	void keyReleased(int key);
 	void mouseMoved(int x, int y );
 	void mouseReleased(int x, int y, int button);
@@ -18,9 +18,10 @@ public:
 	void draw();
 private:
 	ofImage goToFst;
-	Cylinder cylinder;
-	Toro toro;
-	Sphere sphere;
-
-
+	ofShader shader;
+	ofVideoGrabber video;
+	ofFbo fbo;
+	ofTexture texture;
+	float choose;
+	
 };

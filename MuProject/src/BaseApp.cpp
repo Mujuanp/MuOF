@@ -1,5 +1,5 @@
 #include "BaseApp.h"
-#include "State.h"
+#include "states/State.h"
 
 //--------------------------------------------------------------
 void BaseApp::keyPressed(int key){

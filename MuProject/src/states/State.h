@@ -1,6 +1,6 @@
 #pragma once
-#include "ofMain.h"
-#include "BaseApp.h"
+#include "../ofMain.h"
+#include "../BaseApp.h"
 class State
 {
 public:	

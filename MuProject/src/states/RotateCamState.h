@@ -1,11 +1,11 @@
 #pragma once
 #include "State.h"
-#include "BaseApp.h"
+#include "../BaseApp.h"
 
-class TrdState :public State{
+class RotateCamState :public State{
 public:
-	TrdState(BaseApp* ap);
-	~TrdState(void);
+	RotateCamState(BaseApp* ap);
+	~RotateCamState(void);
 	void keyReleased(int key);
 	void mouseMoved(int x, int y );
 	void mouseReleased(int x, int y, int button);

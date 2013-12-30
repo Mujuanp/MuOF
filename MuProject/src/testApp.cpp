@@ -1,14 +1,15 @@
 #include "testApp.h"
-#include "State.h"
+#include "states/State.h"
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	current= new FstState((BaseApp*)this);
+	current= new MainState((BaseApp*)this);
 	states.push_back(current);
-	states.push_back(new SndState((BaseApp*)this));
-	states.push_back(new TrdState((BaseApp*)this));
-	states.push_back(new FthState((BaseApp*)this));
-	states.push_back(new FithState((BaseApp*)this));
+	states.push_back(new MoveCamState((BaseApp*)this));
+	states.push_back(new RotateCamState((BaseApp*)this));
+	states.push_back(new ParticleState((BaseApp*)this));
+	states.push_back(new GeometryState((BaseApp*)this));
+	states.push_back(new CamShaderState((BaseApp*)this));
 }
 
 

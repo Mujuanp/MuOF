@@ -2,11 +2,12 @@
 
 #include "ofMain.h"
 #include "ofGraphics.h"
-#include "FstState.h"
-#include "SndState.h"
-#include "TrdState.h"
-#include "FthState.h"
-#include "FithState.h"
+#include "states/MainState.h"
+#include "states/MoveCamState.h"
+#include "states/RotateCamState.h"
+#include "states/ParticleState.h"
+#include "states/GeometryState.h"
+#include "states/CamShaderState.h"
 class State;
 class testApp : public ofBaseApp{
 

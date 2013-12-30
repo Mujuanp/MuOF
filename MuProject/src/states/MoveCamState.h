@@ -1,11 +1,11 @@
 #pragma once
 #include "State.h"
-#include "BaseApp.h"
-class SndState : public State
+#include "../BaseApp.h"
+class MoveCamState : public State
 {
 public:
-	SndState(BaseApp* app);
-	~SndState(void);
+	MoveCamState(BaseApp* app);
+	~MoveCamState(void);
 //	void setDireccion(ofVec2f* pos,ofVec2f* vel);
 	bool pasoBordeSup(ofVec2f pos);
 	bool pasoBordeInf(ofVec2f pos);
